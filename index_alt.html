@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mosaic shared Demo</title>
+		
+		<link rel="stylesheet" href="css/leaflet.css" />
+		<script type="text/javascript" src="js/leaflet.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/imgViewer2.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+		<style type="text/css">
+			body {
+				background-color: #222;
+			}
+		</style>
+	</head>
+	<body>
+		<img  id="image1" src="images/games.jpg" width="100%" />
+
+		<script type="text/javascript">
+			;(function($) {
+				$(document).ready(function() {
+					var $img = $("#image1").imgViewer2();
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>
