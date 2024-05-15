@@ -6,6 +6,10 @@ html, body {
 	text-align: center;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 .gallery-wrapper {
 	margin: 0px;
 	padding: 15px 0px;
