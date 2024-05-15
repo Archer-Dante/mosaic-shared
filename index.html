@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
     <script src="js/spotlight.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <style>
 	@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -21,7 +22,8 @@
 <div class="gallery-wrapper">
 	<div class="spotlight-group" data-download="true">
 		<a class="spotlight" href="images/games.jpg">
-		    <img src="images/games_thumb.jpg">
+		    <img class="top-image" src="images/games_thumb.jpg">
+		    <img class="bottom-image" src="images/games_source.png">
 		</a>
 	</div>
 </div>
@@ -29,8 +31,8 @@
 <div class="bot-line">
 <hr><p><span class="info">Total size:</span> <span class="desc">27000x24570 pixels</span>
 <span class="info">Grid size</span> <span class="desc">360x135 pixels per element</span>
-<span class="info">Grids amount: <span class="desc">75 vertical * 182 horizontal</span>
-<span class="info">Total games in showcase: <span class="desc">13650 (out of 17000+ dataset)</span>
+<span class="info">Grids amount:</span> <span class="desc">75 vertical * 182 horizontal</span>
+<span class="info">Total games in showcase:</span> <span class="desc">13650 (out of 17000+ dataset)</span>
 
 <span class="desc"><i>* image downscaled to 20000x18200 for Chromium browsers support
 for full size <a href="image/games_full.jpg" class="spotlight">click-here</a> (probably for Firefox only)</i></span>
@@ -39,6 +41,6 @@ for full size <a href="image/games_full.jpg" class="spotlight">click-here</a> (p
 
 
 
-
+ <script src="js/easing.js"></script>
 </body>
 </html>

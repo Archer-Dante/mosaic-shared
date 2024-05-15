@@ -73,3 +73,36 @@ span.desc {
 a {
 	color: #4AA
 }
+
+
+
+
+
+
+.spotlight {
+    position: relative;
+    display: inline-block;
+}
+
+.bottom-image {
+  display: block;
+}
+
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.spotlight:hover .top-image {
+  opacity: 0;
+  transition: 15s;
+  transition-delay: 1s;
+}
+
+.spotlight .top-image {
+  opacity: 1;
+  transition: 2s;
+}
+
