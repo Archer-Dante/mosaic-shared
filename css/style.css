@@ -97,7 +97,7 @@ a {
 
 .spotlight:hover .top-image {
   opacity: 0;
-  transition: 15s;
+  transition: 6s;
   transition-delay: 1s;
 }
 
@@ -106,3 +106,67 @@ a {
   transition: 2s;
 }
 
+.text {
+  display: none;
+}
+
+.text.active {
+  display: block;
+}
+
+
+/* only lff page */
+
+.spotlight img.lesser {
+  width: 400px;
+  margin: 0 10px 10px 10px;
+}
+
+.spotlight img.small-image {
+  margin-bottom: 35px;
+}
+
+.spotlight:hover .top-image.lesser {
+  opacity: 0;
+  transition: 2s;
+  transition-delay: 0.1s;
+}
+
+.spotlight .top-image.lesser {
+  opacity: 1;
+  transition: 1s;
+}
+
+
+
+
+
+
+.text-container {
+  position: relative;
+  height: 50px; /* Высота блока с текстом */
+}
+
+.text {
+  opacity: 0;
+  animation: fade 0.5s ease-in-out;
+}
+
+.text.active {
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  min-width: 700px;
+  max-width: 700px;
+  display: block;
+}
